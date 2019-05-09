@@ -53,8 +53,8 @@ $query = mysqli_query($connect, $sql);
             echo "<td>", $data["email"], "</td>";
             echo "<td>", $data["password"], "</td>";
             echo "<td>", $data["status"], "</td>";
-            echo "<td><a href='delete_member.php?id=", $data["id"], "'class='btn btn-danger'>Delete</a> 
-                     <a href='update_member.php?id=", $data["id"], "'class='btn btn-warning'>Edit</a></td>";
+            echo "<td> <a href='update_member.php?id=", $data["id"], "'class='btn btn-warning'>Edit</a>
+            <a href='delete_member.php?id=", $data["id"], "'class='btn btn-danger'>Delete</a></td>";
             echo "</tr>";
         }
         echo "</tbody>";

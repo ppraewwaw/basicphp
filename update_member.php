@@ -24,6 +24,7 @@ if (!empty($_POST["submit"])) {
     if ($query) {
 
         $msg = "<div class='alert alert-success'>Success</div>";
+        echo "<meta http-equiv=\"refresh\" content=\"1;URL='CRUD.php'\">";
     } else {
         $msg = "<div class='alert alert-danger'>Fail!!</div>";
     }
@@ -51,6 +52,7 @@ $data = mysqli_fetch_assoc($query_sel);
         <h1 class="display-4 text-center">Edit Member</h1>
     </div>
     <div class="container">
+
         <?php echo $msg; ?>
         <form method="POST" action="update_member.php?id=<?php echo $_GET['id'] ?>">
 

@@ -15,6 +15,7 @@ if (!empty($_POST["submit"])) {
 
     if ($query) {
         $msg = "<div class='alert alert-success'>Success</div>";
+        echo "<meta http-equiv=\"refresh\" content=\"1;URL='CRUD.php'\">";
     } else {
         $msg = "<div class='alert alert-danger'>Fail!!</div>";
     }
